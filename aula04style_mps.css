@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+div{
+    border: 3px black solid;
+}
+#caixa1, #caixa2, #caixa3{
+    float: left; /*float faz com que as caixas "flutuem na página"*/
+    width: 29%;
+    height: 150px;
+    margin: 5px 29px;
+}
+#caixa4{
+    background-color: rgba(0, 0, 0, 0.26);
+    width: 30%;
+    height: 300px;
+    /*position: fixed; /*em relacao a pagina*/
+    /*position: relative; /*em relacao a posicao atual*/
+    top: 100;
+    left: 300;
+}
