@@ -1,0 +1,16 @@
+body{
+    background-color: powderblue;
+}
+h1{
+    margin: 0px;
+}
+#titulo{
+    border: 3px mediumturquoise solid;
+    padding-top: 10px; padding-bottom: 10px;
+    color: lightyellow;
+    text-align: center;
+}
+.paragrafo{
+    margin-top: 0px;
+    color: cadetblue
+}
