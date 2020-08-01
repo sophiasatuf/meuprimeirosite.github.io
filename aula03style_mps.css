@@ -1,0 +1,186 @@
+/*todo o codigo*/
+html, body{
+    margin: 0;
+    font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 8px;
+}
+hr{
+    width: 30px;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.margin{
+    margin: 0px;
+}
+/*cabecalho*/
+header{
+    background-color: #0b162a;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo img{
+    width: 130px;
+    height: 51px;
+    float: left;
+    position: absolute;
+}
+#menu{
+    float: right;
+    margin-right: 3%;
+}
+ul{
+    list-style: none;
+}
+header li{
+    float: left;
+    padding: 20px 10px;
+}
+header li a{
+    color: #deca54;
+}
+header li:hover{
+    background-color: #1f2c3d;
+}
+/*capa*/
+#capa{
+    background: url("fundo_mps.jpg");
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover; /*faz a imagem ocupar toda a largura da página*/
+    text-align: center;
+    color: #00070d;
+}
+h1{
+    /*titulo*/
+    padding-top: 14%;
+    font-size: 25;
+    text-transform: uppercase;
+}
+h2{
+    /*subtitulo*/
+    padding-left: 35%; padding-right: 35%;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#buda{
+    font-size: 15px;
+    text-align: right;
+    padding: 5px 36.5% 10px 0px;
+}
+#ods_link{
+    color: #97933a;
+    text-transform: uppercase;
+    border: 1px #97933a solid;
+    padding: 5px 10px;
+}
+#ods_link:hover{
+    background-color: #97923a44;
+}
+/*sections*/
+h3{
+    /*titulo das secoes*/
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 2% 0px 10px 0px;
+    text-align: center;
+}
+h4{
+    /*section 1: titulo do texto
+      section 3: titulo dos icones*/
+    color: #00070d;
+    font-size: 25px;
+}
+.section_tipo{
+    padding: 2%;
+    float: left;
+}
+.section_cor{
+    background-color: #f7f7f7;
+}
+.coluna{
+    float: left;
+    padding: 0px 5%;
+    position: relative;
+}
+.dois{
+    width: 40%
+}
+.tres{
+    width: 29%
+}
+.quatro{
+    width: 15%
+}
+.justify{
+    /*sections 1, 2, 4*/
+    text-align: justify;
+}
+.center{
+    /*h3, section 3*/
+    text-align: center;
+}
+/*section 1*/
+#projeto{
+    border-left: 45px #26464b solid;
+}
+/*section 2*/
+#energia_solar{
+    border-left: 45px #1f2c3d solid;
+}
+/*section 3*/
+#pq{
+    border-left: 45px #dec954 solid;
+}
+#pq .icone{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+#pq .icone img{
+    margin: 15px;
+}
+#pq .icone:hover{
+    background-color: #deca54;
+    transition: 0.5s;
+}
+/*section 4*/
+#eu{
+    border-left: 45px #97933a solid;
+}
+#eu img{
+    width: 50%;
+}
+/*rodape*/
+#rodape{
+    /*foi dado uma identidade para o link no menu funcionar*/
+    width: 100%;
+    background-color: #1f2c3d;
+    color: #deca54;
+}
+#rodape h4{
+    color: #dec954;
+}
+.contato{
+    float: left;
+    position: relative;
+    width: 45%;
+    text-align: right;
+}
+#rodape .icone{
+    padding: 5px 20px 5px 0px;
+}
+#rodape address{
+    text-align: left;
+}
+/*
+    # para chamar ids
+    . para chamar classes
+*/
+/*clear: both; cancela o efeito das floats*/
