@@ -1,0 +1,353 @@
+:root{
+    font-size: 100%; /*controle das medidas rem*/
+}
+/*todo o codigo*/
+html, body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+}
+hr{
+    width: 30px;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.margin{
+    margin: 0px;
+}
+/*cabecalho*/
+header{
+    background-color: #0b162a;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo img{
+    width: 130px;
+    height: 51px;
+    float: left;
+    position: absolute;
+}
+/*menu*/
+#menu2{
+    float: right;
+    margin-right: 3%;
+}
+#menu2 a{
+    text-decoration: none;
+    color: #deca54;
+    float: left;
+    padding: 20px 10px;
+}
+header #menu2 a:hover{
+    background-color: #1f2c3d;
+    padding: 15px 10px 25px 10px;
+    transition: all .4s linear;  
+}
+/*responsividade*/
+header label{
+    visibility: hidden;
+}
+header #check{
+    display: none;
+}
+/*capa*/
+#capa .fundo{
+    height: 85%;
+}
+h1{
+    padding-top: 21%;
+}
+h2{
+    padding-left: 20%; padding-right: 20%;
+}
+#buda{
+    padding: 5px 21% 10px 0px;
+}
+#ods_link{
+    color: #5f6d43;
+    border: 1px #5f6d43 solid;
+}
+#ods_link:hover{
+    background-color: #5f6d4344;
+}
+/*capa*/
+#capa{
+    margin: 0 auto;
+    color: #00070d;
+}
+#capa .fundo{
+    background: url("img/fundo_mps.jpg");
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover; /*faz a imagem ocupar toda a largura da página*/
+}
+h1{
+    /*titulo*/
+    padding-top: 14%;
+    font-size: 25;
+    text-transform: uppercase;
+}
+h2{
+    /*subtitulo*/
+    padding-left: 36.3%; padding-right: 36.3%;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#buda{
+    font-size: 15px;
+    text-align: right;
+    padding: 5px 36.7% 10px 0px;
+}
+#ods_link{
+    color: #97933a;
+    text-transform: uppercase;
+    border: 1px #97933a solid;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+#ods_link:hover{
+    background-color: #97923a44;
+}
+/*sections*/
+h3{
+    /*titulo das secoes*/
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 2% 0px 10px 0px;
+    text-align: center;
+}
+h4{
+    /*section 1: titulo do texto
+      section 3: titulo dos icones*/
+    color: #00070d;
+    font-size: 25px;
+}
+.section_tipo{
+    padding: 2%;
+    float: left;
+}
+.section_cor{
+    background-color: #f7f7f7;
+}
+.coluna{
+    float: left;
+    padding: 0px 5%;
+    position: relative;
+}
+.dois{
+    width: 40%
+}
+.tres{
+    width: 29%
+}
+.quatro{
+    width: 15%
+}
+.justify{
+    /*sections 1, 2, 4*/
+    text-align: justify;
+}
+.center{
+    /*h3, section 3*/
+    text-align: center;
+}
+/*section 1*/
+#projeto{
+    border-left: 45px #26464b solid;
+}
+/*section 2*/
+#energia_solar{
+    border-left: 45px #1f2c3d solid;
+}
+/*section 3*/
+#pq{
+    border-left: 45px #dec954 solid;
+}
+#pq .icone{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+#pq .icone img{
+    margin: 15px;
+}
+#pq .icone:hover{
+    background-color: #deca54;
+    transition: 0.5s;
+}
+#pq .padding{
+    padding-bottom: 13%;
+}
+/*section 4*/
+#eu{
+    border-left: 45px #97933a solid;
+}
+#eu img{
+    width: 50%;
+}
+/*rodape*/
+#rodape{
+    /*foi dado uma identidade para o link no menu funcionar*/
+    width: 100%;
+    background-color: #1f2c3d;
+    color: #deca54;
+    box-sizing: border-box;
+}
+#rodape h4{
+    color: #dec954;
+}
+.contato{
+    display: flex;
+    /*float: left;
+    position: relative;
+    width: 45%;
+    text-align: right;*/
+}
+#rodape .icone{
+    padding: 5px 20px 5px 0px;
+}
+#rodape address{
+    text-align: left;
+}
+/*
+    responsividade:
+    @media capta o tamanho da tela, quando a tela
+    estiver menor que 768px, ela vai operar o que
+    estiver dentro dela
+*/
+@media all and (max-width:768px){
+    /* body{
+        font-size: 0.9rem;
+    } */
+    /*cabecalho*/
+    #logo{
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+    #logo img{
+        transform: translateX(-50%);
+    }
+    /*menu*/
+    header label{
+        visibility: visible;
+        position: absolute;
+        margin: 2.5%;
+        text-align: right;
+        cursor: pointer;
+        z-index: 11;
+        transition: all .2s linear;
+    }
+    #menu2{
+        box-sizing: border-box;
+        background-color: #0b162a;
+        margin: 59px 0px;
+        height: 350px;
+        width: 250px;
+        left: -250px;
+        position: absolute;
+        transition: all .3s linear;
+    }
+    #menu2 a{
+        /* display: block; */
+        text-decoration: none;
+        padding: 7% 5%;
+        opacity: 0;
+        margin-top: 200px;
+        /* transition: all .4s linear; */
+    }
+    #check:checked ~ #menu2{
+        transform: translateX(250px);
+    }
+    #check:checked ~ #menu2 a{
+        opacity: 1;
+        margin-top: 0;
+    }
+    #menu2 a:hover{
+        padding: 7% 5% 7% 10%;
+    }
+    /*capa*/
+    #capa .fundo{
+        height: 85%;
+    }
+    h1{
+        padding-top: 21%;
+    }
+    h2{
+        padding-left: 20%; padding-right: 20%;
+    }
+    #buda{
+        padding: 5px 21% 10px 0px;
+    }
+    #ods_link{
+        color: #5f6d43;
+        border: 1px #5f6d43 solid;
+    }
+    #ods_link:hover{
+        background-color: #5f6d4344;
+    }
+    /*sections*/
+    .section_tipo{
+        padding: 50px 0 0 0;
+    }
+    .coluna, .dois, .tres, .quatro{
+        display: block; /*divisoes passam a ocupar toda a linha*/
+        padding: 0;
+        width: 80%;
+        margin: 10px auto;
+        float: none;
+    }
+    .justify{
+        text-align: left;
+    }
+    /*section 1*/
+    #projeto{
+        border-left: 20px #26464b solid;
+    }
+    #projeto h4{
+        text-align: center;
+    }
+    /*section 2*/
+    #energia_solar{
+        border-left: 20px #1f2c3d solid;
+    }
+    /*section 3*/
+    #pq{
+        border-left: 20px #dec954 solid;
+    }
+    #pq .padding{
+        padding: 0;
+    }
+    /*section 4*/
+    #eu{
+        border-left: 20px #97933a solid;
+    }
+    /*rodape*/
+    #rodape{
+        text-align: left;
+    }
+    #rodape h4{
+        padding-left: 17%;
+    }
+    #rodape p{
+        padding: 0 17.5%;
+    }
+    #rodape .contato{
+        float: left;
+        padding: 2% 3.5%;
+    }
+    #rodape .icone{
+        padding: 5px 10px 5px 0px;
+    }
+}
+/*
+    # para chamar ids
+    . para chamar classes
+    clear: both; cancela o efeito das floats
+*/
